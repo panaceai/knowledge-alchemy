@@ -1,1 +1,1 @@
-# knowledge-alchemy
+# Knowledge Alchemy
