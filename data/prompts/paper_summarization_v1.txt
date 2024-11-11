@@ -1,0 +1,13 @@
+Summarize this paper in a maximum of two paragraphs. When summarizing, address the following questions:
+
+1. Dataset/Benchmark Creation: Briefly explain the method, process, and data sources used to create the dataset or benchmark introduced in the paper. Highlight any unique or innovative aspects of the dataset creation.
+
+2. Dataset Statistics: How many samples (e.g., documents, labels) are included in the dataset? Specify the types of labels and annotation categories used.
+
+3. Annotation Details: If the dataset was annotated by human labelers, particularly medical professionals, provide details on the number of annotators involved, their backgrounds, and any specific guidelines or protocols they followed during the annotation process.
+
+4. Model Evaluation: Describe the types of tasks this dataset supports (e.g., question answering, classification, summarization, etc.). List the models that were evaluated on this benchmark, the metrics used for evaluation, and identify the top-performing models.
+
+5. External Resources: Include any links to a GitHub repository, Hugging Face models, or other external resources referenced in the paper.
+
+Ensure that the summary remains concise, focusing on the most essential information related to each of these questions.
