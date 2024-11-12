@@ -28,7 +28,7 @@ pip install -r requirements.txt
     ```
 
 ## PDF Summarization Tool
-The tool takes PDF files and a prompt stored in a `.txt` file as input and returns a json file containing the summarizes of PDFs.
+The tool takes PDF files and a prompt stored in a `.txt` file as input and returns a JSON file containing PDF summaries.
 
 ### Usage 🚀
 
