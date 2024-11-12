@@ -1,3 +1,4 @@
+import time
 import json
 import argparse
 
@@ -5,7 +6,7 @@ from anthropic_api import AnthropicAPI
 from pathlib import Path
 
 
-def summarize_pdfs_in_directory(pdfs_dir, prompt_path, output_path):
+def summarize_pdfs_in_directory(pdfs_dir, prompt_path, output_path, delay=1):
     """
     Summarizes all PDF files in a given directory and saves the results to a JSON file.
 
@@ -31,6 +32,8 @@ def summarize_pdfs_in_directory(pdfs_dir, prompt_path, output_path):
         else:
             print(f"Failed to summarize: {pdf_file.name}")
 
+        time.sleep(delay)
+
     # Save the summaries to a JSON file
     with open(output_path, 'w', encoding='utf-8') as json_file:
         json.dump(summaries, json_file, ensure_ascii=False, indent=4)
@@ -44,7 +47,9 @@ if __name__ == "__main__":
     parser.add_argument('--pdfs-dir', type=str, required=True, help="Path to the PDFs directory")
     parser.add_argument('--prompt-path', type=str, required=True, help="Path to the .txt file containing the prompt")
     parser.add_argument('--output-path', type=str, required=True, help="Path to the .json file to store the output")
+    parser.add_argument("--delay", type=float, default=1.0,
+                        help="Delay in seconds between API calls (default: 1 second)")
 
     args = parser.parse_args()
 
-    summarize_pdfs_in_directory(args.pdfs_dir, args.prompt_path, args.output_path)
+    summarize_pdfs_in_directory(args.pdfs_dir, args.prompt_path, args.output_path, args.delay)

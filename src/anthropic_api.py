@@ -27,8 +27,8 @@ class AnthropicAPI:
         Summarizes the content of a PDF using a prompt.
 
         Parameters:
-        - pdf_data (str): The base64 encoded PDF data.
-        - prompt (str): The prompt to use for summarizing the content.
+        - pdf_path (str): The path to the PDF file.
+        - prompt_path (str): The path to the prompt to use for summarizing the content.
 
         Returns:
         - str: The summarized content from the API response.
