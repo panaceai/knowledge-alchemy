@@ -18,7 +18,7 @@ class TestAnthropicAPI(unittest.TestCase):
     def test_summarize_pdf(self):
         """Test the summarize_pdf method with a sample PDF and prompt."""
         # Read base64-encoded PDF data from a sample file
-        pdf_path = '../data/pdf/2024.emnlp-main.1026.pdf'
+        pdf_path = '../data/pdfs/2024.emnlp-main.1026.pdf'
         prompt_path = '../data/prompts/paper_summarization_v1.txt'
 
         # Call the summarize_pdf method and check the result

@@ -1,6 +1,5 @@
 import httpx
 import base64
-import argparse
 import anthropic
 
 from dotenv import load_dotenv
@@ -101,24 +100,3 @@ class AnthropicAPI:
             return all([result.scheme, result.netloc])
         except ValueError:
             return False
-
-
-# Example usage
-if __name__ == "__main__":
-    # Argument parser setup
-    parser = argparse.ArgumentParser(description="Summarize a PDF using Anthropic API")
-    parser.add_argument('--pdf-path', type=str, required=True, help="Path to the base64 encoded PDF file")
-    parser.add_argument('--prompt-path', type=str, required=True, help="Path to the .txt file containing the prompt")
-
-    args = parser.parse_args()
-
-    # Initialize the API client
-    api_client = AnthropicAPI()
-
-    # Call the summarize_pdf method
-    summary = api_client.summarize_pdf(args.pdf_path, args.prompt_path)
-
-    if summary:
-        print("Summary:", summary.content)
-    else:
-        print("Failed to retrieve summary.")
