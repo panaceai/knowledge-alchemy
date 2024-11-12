@@ -1,4 +1,5 @@
 # Knowledge Alchemy
+![Knowledge Alchemy Logo](assets/knowledge_alchemy_logo.png)
 
 ### Installation 🛠️
 
