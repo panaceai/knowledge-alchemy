@@ -43,8 +43,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Summarize a PDF using Anthropic API")
     parser.add_argument('--pdfs-dir', type=str, required=True, help="Path to the PDFs directory")
     parser.add_argument('--prompt-path', type=str, required=True, help="Path to the .txt file containing the prompt")
-    parser.add_argument('--output-path', type=str, help="Path to the .json file to store the output",
-                        default="../data/result.json")
+    parser.add_argument('--output-path', type=str, required=True, help="Path to the .json file to store the output")
 
     args = parser.parse_args()
 
