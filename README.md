@@ -26,7 +26,6 @@ pip install -r requirements.txt
     ```
     ANTHROPIC_API_KEY=your_api_key_here
     ```
-3. Replace `your_api_key_here` with your actual API key from Anthropic.
 
 ## PDF Summarization Tool
 The tool takes PDF files and a prompt stored in a `.txt` file as input and returns a json file containing the summarizes of PDFs.
