@@ -25,12 +25,12 @@ The tool takes a directory of PDF files and a prompt stored in a `.txt` file as 
 ## Usage 🚀
 
 ```bash
-python summarize_pdfs.py --pdfs-dir path/to/pdfs/dir --prompt-path path/to/txt/prompt/file --output-file path/to/output/json/file
+python src/summarize_pdfs.py --pdfs-dir path/to/pdfs/dir --prompt-path path/to/txt/prompt/file --output-file path/to/output/json/file
 ```
 
 ### Example
 ```bash
-python summarize_pdfs.py --pdfs-dir ../data/pdfs/ --prompt-path ../data/prompts/paper_summarization_v1.txt --output-path ../data/result.json
+python src/summarize_pdfs.py --pdfs-dir data/pdfs/ --prompt-path data/prompts/paper_summarization_v1.txt --output-path data/result.json
 ```
 
 ## Testing ✅
