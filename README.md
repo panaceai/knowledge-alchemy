@@ -10,8 +10,8 @@ cd knowledge-alchemy
 
 #### Step 2: Set up a virtual environment (recommended)
 ```bash
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+python3 -m venv alchemy-env
+source alchemy-env/bin/activate  # On Windows: alchemy-env\Scripts\activate
 ```
 
 #### Step 3: Install dependencies
