@@ -1,5 +1,5 @@
 # Knowledge Alchemy
-![Knowledge Alchemy Logo](assets/knowledge_alchemy_logo.png)
+<img src="assets/knowledge_alchemy_logo.png" alt="Knowledge Alchemy Logo" width="300"/>
 
 ### Installation 🛠️
 
