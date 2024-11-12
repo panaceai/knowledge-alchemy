@@ -19,6 +19,14 @@ source alchemy-env/bin/activate  # On Windows: alchemy-env\Scripts\activate
 pip install -r requirements.txt
 ```
 
+#### Step 4: Set up API Keys 🔑
+1. Create a `.env` file in the root directory of the project.
+2. Add the following line to the `.env` file:
+    ```
+    ANTHROPIC_API_KEY=your_api_key_here
+    ```
+3. Replace `your_api_key_here` with your actual API key from Anthropic.
+
 ## Summarize PDF Tool
 The tool takes a directory of PDF files and a prompt stored in a `.txt` file as input and returns a json file containing the summarizes of PDFs.
 
