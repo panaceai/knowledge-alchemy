@@ -11,9 +11,10 @@ def summarize_pdfs_in_directory(pdfs_dir, prompt_path, output_path, delay=1):
     Summarizes all PDF files in a given directory and saves the results to a JSON file.
 
     Parameters:
-    - input_dir (str): Path to the directory containing PDF files.
+    - pdfs_dir (str): Path to the directory containing PDF files.
     - prompt_path (str): Path to .txt file containing prompt
-    - output_file (str): Path to the output JSON file.
+    - output_path (str): Path to the output JSON file.
+    - delay (int): Delay between API calls (in seconds) to avoid rate limits.
     """
     # Initialize the Anthropic API client
     api_client = AnthropicAPI()
