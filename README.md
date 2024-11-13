@@ -26,25 +26,22 @@ pip install -r requirements.txt
     ```
     ANTHROPIC_API_KEY=your_api_key_here
     ```
-3. Replace `your_api_key_here` with your actual API key from Anthropic.
 
-## Summarize PDF Tool
-The tool takes a directory of PDF files and a prompt stored in a `.txt` file as input and returns a json file containing the summarizes of PDFs.
+## PDF Summarization Tool
+The tool takes PDF files and a prompt stored in a `.txt` file as input and returns a JSON file containing PDF summaries.
 
-## Usage 🚀
+### Usage 🚀
 
 ```bash
 python src/summarize_pdfs.py --pdfs-dir path/to/pdfs/dir --prompt-path path/to/txt/prompt/file --output-file path/to/output/json/file
 ```
 
-### Example
+#### Example
 ```bash
 python src/summarize_pdfs.py --pdfs-dir data/pdfs/ --prompt-path data/prompts/paper_summarization_v1.txt --output-path data/result.json
 ```
 
-## Testing ✅
-The project includes unit tests to validate its functionality. To run the tests, use:
-
+### Testing ✅
 ```bash
 cd src
 pytest ../tests/
