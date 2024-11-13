@@ -1,0 +1,13 @@
+Summarize this paper in a maximum of two paragraphs. When summarizing, address the following questions:
+
+1. Methods, Datasets, or Benchmarks: Briefly describe the methods, processes, and data sources used in the paper, including any benchmarks or datasets utilized or introduced. Highlight any unique or innovative aspects of the methods, datasets, or benchmarks presented.
+
+2. Dataset Statistics: If the paper involves a dataset (either newly introduced or existing), specify the number of samples (e.g., documents, labels) used. If a new dataset or benchmark is introduced, describe the types of labels and annotation categories used.
+
+3. Annotation Details (if applicable): If a new dataset/benchmark is introduced and involves human annotation, particularly by medical professionals, provide details on the number of annotators involved, their backgrounds, and any specific guidelines or protocols they followed during the annotation process.
+
+4. Model Evaluation: Describe the types of tasks evaluated in the paper (e.g., question answering, classification, summarization). List the models that were tested, the benchmarks used, the metrics for evaluation, and identify the top-performing models if applicable.
+
+5. External Resources: Include any links to a GitHub repository, Hugging Face models, or other external resources referenced in the paper.
+
+Ensure that the summary remains concise, focusing on the most critical information related to these questions.
